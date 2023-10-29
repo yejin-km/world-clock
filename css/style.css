@@ -1,7 +1,90 @@
+body {
+  font-family: "Pangolin", cursive;
+  background-image: url("/images/world-map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+select {
+  font-family: "Pangolin", cursive;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
 h1 {
+  font-size: 45px;
   text-align: center;
+}
+
+h2 {
+  margin: 0;
+}
+
+.container {
+  width: 450px;
+  height: 550px;
+  margin: 60px auto;
+  padding: 40px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.city {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+  font-size: 25px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+}
+
+.city:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+.time {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.time small {
+  vertical-align: middle;
+  font-size: 25px;
+  line-height: 50px;
 }
 
 footer {
   text-align: center;
+  color: white;
+  font-size: 18px;
+  margin-top: -50px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer a {
+  color: gold;
+  text-decoration: none;
+}
+
+footer strong {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: white;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
 }
