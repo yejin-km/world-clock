@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -23,30 +25,30 @@
         <option value="new-york">New York</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="london">
         <div>
           <h2>
             London <img src="/images/big-ben.png" width="30" height="30" />
           </h2>
           <div class="date">October 26, 2023</div>
         </div>
-        <div class="time">2:13 <small>AM</small></div>
+        <div class="time">2:13 <small></small></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="paris">
         <div>
           <h2>Paris <img src="/images/eiffel-tower.png" /></h2>
           <div class="date">October 26, 2023</div>
         </div>
-        <div class="time">2:13 <small>AM</small></div>
+        <div class="time">2:13 <small></small></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="new-york">
         <div>
           <h2>New York <img src="/images/liberty.png" /></h2>
           <div class="date">October 26, 2023</div>
         </div>
-        <div class="time">2:13 <small>AM</small></div>
+        <div class="time">2:13 <small></small></div>
       </div>
     </div>
 
