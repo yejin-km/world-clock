@@ -41,10 +41,14 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  let image = null;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+    image = "earth";
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
-  let image = null;
 
   if (cityTimeZone === "Europe/London") {
     image = "big-ben";
