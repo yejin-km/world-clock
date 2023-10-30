@@ -12,15 +12,15 @@ function updateTime() {
     );
   }
 
-  // Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  // Sydney
+  let sydneyElement = document.querySelector("#sydney");
+  if (sydneyElement) {
+    let sydneyDateElement = sydneyElement.querySelector(".date");
+    let sydneyTimeElement = sydneyElement.querySelector(".time");
+    let sydneyTime = moment().tz("Australia/Sydney");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    sydneyDateElement.innerHTML = sydneyTime.format("MMMM	Do YYYY");
+    sydneyTimeElement.innerHTML = sydneyTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -53,8 +53,8 @@ function updateCity(event) {
   if (cityTimeZone === "Europe/London") {
     image = "big-ben";
   }
-  if (cityTimeZone === "Europe/Paris") {
-    image = "eiffel-tower";
+  if (cityTimeZone === "Australia/Sydney") {
+    image = "sydney";
   }
   if (cityTimeZone === "America/New_York") {
     image = "liberty";
